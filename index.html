@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+    <head>
+        <title>军事训练成绩得分转换器</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style/style.css"/>
+        <script type="text/javascript" src="script/script.js"></script>
+    </head>
+    <body>
+        <div id="header">
+            <img src="./images/title-img.png" width="44px" height="44px">
+            <span id="title">武警易门中队军事训练成绩得分转换器</span>
+        </div>
+        <div id="main">
+            <div id="test" class="item">
+                <input type="text" id="testInput">
+                <button id="testButton">测试</button>
+                <input type="text" id="testInput2">
+            </div>
+            <div id="5km" class="item">
+                <p class="item-title">武装五公里越野</p>
+                <div class="input-div" id="div">
+                    <input type="text" id="5km-min"><span>分</span>
+                    <input type="text" id="5km-sec"><span>秒</span>
+                    <select id="5km-select">
+                        <option value="1">24岁以下</option>
+                        <option value="2">25~27岁</option>
+                        <option value="3">28~29岁</option>
+                    </select>
+                    <button id="5km-btn">得分</button>
+                    <span id="scroe5km" class="scroeSpan"></span>
+                </div>
+            </div>
+            <div id="400m" class="item">
+                <p class="item-title">通过400米障碍</p>
+                <div class="input-div">
+                    <input type="text" id="400m-min"><span>分</span>
+                    <input type="text" id="400m-sec"><span>秒</span>
+                    <select id="select400m">
+                        <option value="1">24岁以下</option>
+                        <option value="2">25~27岁</option>
+                        <option value="3">28~29岁</option>
+                    </select>
+                    <button id="400m-btn">得分</button>
+                    <span class="scroeSpan" id="scroe400m"></span>
+                </div>
+            </div>
+            <div id="apparatus-gymnastics" class="item">
+                <p class="item-title">器械体操</p>
+                <div id="horizontal-bar" class="input-div">
+                    <div id="horizontal-bar-1">
+                        <p>单杠一练习</p>
+                        <span>个数：</span>
+                        <input type="text" id="horizontal-bar-1-num">
+                        <select>
+                            <option value="1">24岁以下</option>
+                            <option value="2">25~27岁</option>
+                            <option value="3">28~29岁</option>
+                        </select>
+                        <button id="horizontal-bar-1-btn">得分</button>
+                        <span class="scroeSpan" id="horizontal-bar-1-scroe"></span>
+                    </div>
+                    <div id="horizontal-bar-2">
+                        <p>单杠二练习</p>
+                        <span>个数：</span>
+                        <input type="text" id="horizontal-bar-2-num">
+                        <select id="hb2-select">
+                            <option value="1">24岁以下</option>
+                            <option value="2">25~27岁</option>
+                            <option value="3">28~29岁</option>
+                        </select>
+                        <button id="hb2-btn">得分</button>
+                        <span class="scroeSpan" id="hb2-scroe"></span>
+
+                    </div>
+                </div>
+                <div id="parallel-bars" class="input-div">
+                    <div id="parallel-bars-1">
+                        <p>双杠一练习</p>
+                        <span>个数：</span>
+                        <input type="text" id="parallel-bar-1-num">
+                        <select>
+                            <option value="1">24岁以下</option>
+                            <option value="2">25~27岁</option>
+                            <option value="3">28~29岁</option>
+                        </select>
+                        <button id="parallel-bar-2-btn">得分</button>
+                        <span class="scroeSpan" id="parallel-bar-2-scroe"></span>
+                    </div>
+                    <div id="parallel-bars-2">
+                        <p>双杠二练习</p>
+                        <span>个数：</span>
+                        <input type="text" id="parallel-bar-2-num">
+                        <select>
+                            <option value="1">24岁以下</option>
+                            <option value="2">25~27岁</option>
+                            <option value="3">28~29岁</option>
+                        </select>
+                        <button id="parallel-bar-2-btn">得分</button>
+                        <span class="scroeSpan" id="parallel-bar-2-scroe"></span>
+                    </div>
+                </div>
+            </div>
+            <div id="rope-climbing" class="item">
+                <p class="item-title">爬绳</p>
+                <div class="input-div">
+                    <span>次数：</span>
+                    <input type="text" id="rope-climbing-num">
+                    <select id="rope-climbing-select">
+                        <option value="1">24岁以下</option>
+                        <option value="2">25~27岁</option>
+                        <option value="3">28~29岁</option>
+                    </select>
+                    <button id="rope-climbing-btn">得分</button>
+                    <span id="rope-climbing-scroe" class="scroeSpan"></span>
+                </div>
+            </div>
+            <div id="snakelike-running" class="item">
+                <p class="item-title">30×2蛇形跑</p>
+                <div class="input-div">
+                    <input type="text" id="sr-input"><span>秒</span>
+                    <select id="sr-select">
+                        <option value="1">24岁以下</option>
+                        <option value="2">25~27岁</option>
+                        <option value="3">28~29岁</option>
+                    </select>
+                    <button id="sr-btn">得分</button>
+                    <span class="scroeSpan" id="sr-scroe"></span>
+                </div>
+            </div>
+            <div id="weight-combination" class="item">
+                <p class="item-title">负重组合</p>
+                <div class="input-div">
+                    <input type="text" id="weight-combination-sec"><span>秒</span>
+                    <select>
+                        <option value="24以下">24岁以下</option>
+                        <option value="25~27">25~27岁</option>
+                        <option value="27~29">28~29岁</option>
+                    </select>
+                    <button id="weight-combination-btn">得分</button>
+                    <span class="scroeSpan" id="wc-scroe"></span>
+                </div>
+            </div>
+            <div id="unarmyed-combination" class="item">
+                    <p class="item-title">徒手组合</p>
+                    <div class="input-div">
+                        <input type="text" id="unarmyed-combination-sec"><span>秒</span>
+                        <select>
+                            <option value="24以下">24岁以下</option>
+                            <option value="25~27">25~27岁</option>
+                            <option value="27~29">28~29岁</option>
+                        </select>
+                        <button id="unarmyed-combination-btn">得分</button>
+                        <span class="scroeSpan" id="uc-scroe"></span>
+                    </div>
+            </div>
+            <div id="rescue-combination" class="item">
+                    <p class="item-title">救护组合</p>
+                    <div class="input-div">
+                        <input type="text" id="rescue-combination-sec"><span>秒</span>
+                        <select>
+                            <option value="24以下">24岁以下</option>
+                            <option value="25~27">25~27岁</option>
+                            <option value="27~29">28~29岁</option>
+                        </select>
+                        <button id="rescue-combination-btn">得分</button>
+                        <span class="scroeSpan" id="rc-scroe"></span>
+                    </div>    
+            </div>
+        </div>
+    </body>
+</html>
